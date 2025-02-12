@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "193791008549",
+    "project_id": "iniciosesionandroid-6a61a",
+    "storage_bucket": "iniciosesionandroid-6a61a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193791008549:android:bc8f368fc368c37a8bc4cc",
+        "android_client_info": {
+          "package_name": "com.dam.iniciosesionfireabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtii8YOMkbl1-pM6YI6ZfySwZtSadZQv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

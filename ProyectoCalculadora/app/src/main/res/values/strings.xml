@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProyectoCalculadora</string>
+    <string name="et1">Introduzca primer número</string>
+    <string name="et2">Introduzca segundo número</string>
+    <string name="calc">Calcular</string>
+    <string name="sumar">Sumar</string>
+    <string name="res">Resultado</string>
+    <string name="restar">Restar</string>
+    <string name="multi">Multiplicar</string>
+    <string name="divid">Dividir</string>
+</resources>

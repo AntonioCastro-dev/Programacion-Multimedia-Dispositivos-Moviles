@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProductosSQLite</string>
+    <string name="cod_prod">Codigo del producto</string>
+    <string name="desc_prod">Descripción del producto</string>
+    <string name="precio_prod">Precio del producto</string>
+    <string name="btn_guardar">REGISTRAR PRODUCTO</string>
+    <string name="btn_buscar">BUSCAR PRODUCTO</string>
+    <string name="btn_modificar">MODIFICAR PRODUCTO</string>
+    <string name="btn_eliminar">ELIMINAR PRODUCTO</string>
+</resources>

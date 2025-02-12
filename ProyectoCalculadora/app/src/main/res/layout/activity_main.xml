@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5D6A7"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="@string/et1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/et2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_number1" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_number2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        android:onClick="calcular"
+        android:text="@string/calc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:text="@string/calc" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/res"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <!--<RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="193dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="44dp"
+        android:onClick="calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_number2">
+
+        <RadioButton
+            android:id="@+id/rb_sumar"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:onClick="calcular"
+            android:text="@string/sumar" />
+
+        <RadioButton
+            android:id="@+id/rb_restar"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:onClick="calcular"
+            android:text="@string/restar" />
+
+        <RadioButton
+            android:id="@+id/rb_multiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:onClick="calcular"
+            android:text="@string/multi" />
+
+        <RadioButton
+            android:id="@+id/rb_dividir"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:onClick="calcular"
+            android:text="@string/divid" />
+    </RadioGroup>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

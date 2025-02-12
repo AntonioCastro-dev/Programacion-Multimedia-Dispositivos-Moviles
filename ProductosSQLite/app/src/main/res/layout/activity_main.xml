@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF27F6"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/cod_prod"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#5CB023"
+        android:onClick="registrar"
+        android:text="@string/btn_guardar"
+        app:layout_constraintEnd_toEndOf="@+id/txt_precio"
+        app:layout_constraintStart_toStartOf="@+id/txt_precio"
+        app:layout_constraintTop_toBottomOf="@+id/txt_precio"
+        app:rippleColor="#32D7CA" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EFD033"
+        android:onClick="buscar"
+        android:text="@string/btn_buscar"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:rippleColor="#44DDB9" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#3077C2"
+        android:onClick="modificar"
+        android:text="@string/btn_modificar"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:rippleColor="#26DF8A" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#C73232"
+        android:onClick="eliminar"
+        android:text="@string/btn_eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:rippleColor="#40F893" />
+
+    <EditText
+        android:id="@+id/txt_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/precio_prod"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_descripcion"
+        app:layout_constraintStart_toStartOf="@+id/txt_descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descripcion" />
+
+    <EditText
+        android:id="@+id/txt_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/desc_prod"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_codigo"
+        app:layout_constraintStart_toStartOf="@+id/txt_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_codigo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lista"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/btn_lista"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lista"
+        app:srcCompat="@drawable/perrillo" />
+
+    <Button
+        android:id="@+id/btn_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="verLista"
+        android:text="Ver Lista"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

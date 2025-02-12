@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProductosVolley</string>
+    <string name="registro_de_productos">Registro de productos</string>
+    <string name="buscar">Buscar</string>
+    <string name="ingrese_c_digo">Ingrese código</string>
+    <string name="producto">Producto</string>
+    <string name="precio">Precio</string>
+    <string name="fabricante">Fabricante</string>
+    <string name="agregar">Agregar</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+</resources>

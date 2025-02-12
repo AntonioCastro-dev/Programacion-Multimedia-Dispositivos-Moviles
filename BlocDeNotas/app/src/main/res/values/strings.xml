@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BlocDeNotas</string>
+    <string name="boton">Guardar</string>
+    <string name="multiline">Ingrese aqui sus notas</string>
+</resources>

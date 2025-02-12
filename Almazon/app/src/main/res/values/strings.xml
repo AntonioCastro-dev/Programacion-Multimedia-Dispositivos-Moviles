@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PrimerProyecto</string>
+    <string name="et_user">Usuario</string>
+    <string name="et_pass">Contraseña</string>
+    <string name="et_confUser">Confirmar Usuario</string>
+    <string name="et_confPass">Confirmar Contraseña</string>
+    <string name="txt1">Gestiona el inventario\n de tu almacén.</string>
+    <string name="txt2">Inventario Almacen</string>
+    <string name="btn_Agregar">Agregar Producto</string>
+    <string name="hint_nombreProducto">Nombre del producto</string>
+    <string name="hint_unidades">Unidades</string>
+    <string name="hint_descripcion">Descripcion</string>
+    <string name="prods">Productos</string>
+</resources>

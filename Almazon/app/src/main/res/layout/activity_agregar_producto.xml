@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BE8643"
+    tools:context=".AgregarProducto">
+
+    <ImageView
+        android:id="@+id/btn_volver"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_volver" />
+
+    <Button
+        android:id="@+id/btnAgregarProducto"
+        android:layout_width="239dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/btn_Agregar"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etDescripcion"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/etDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/etDescripcion" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_descripcion"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/etUnidades"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etUnidades"
+        app:layout_constraintTop_toBottomOf="@+id/etUnidades" />
+
+    <EditText
+        android:id="@+id/etUnidades"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/hint_unidades"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombre"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/hint_nombreProducto"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Agregar un Producto al Inventario"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
